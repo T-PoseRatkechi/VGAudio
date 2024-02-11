@@ -21,15 +21,13 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 8.0.x
-    
-    - run: find . -type d
-    
+
     - name: Build 
-      run: dotnet publish ./src/vgaudio -c Release
+      run: dotnet publish ./src/VGAudio -c Release
       
     - name: Upload artifact
       uses: actions/upload-artifact@v4.3.1
       with:
         name: Release
-        path: ./src/vgaudio/bin/Release/netstandard1.1
+        path: ./src/VGAudio/bin/Release/netstandard1.1
       
