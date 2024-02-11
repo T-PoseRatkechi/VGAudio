@@ -22,7 +22,7 @@ jobs:
       with:
         dotnet-version: 8.0.x
     
-    - run: ls -d */
+    - run: find . -type d
     
     - name: Build 
       run: dotnet publish ./src/vgaudio -c Release
