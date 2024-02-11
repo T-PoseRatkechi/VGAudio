@@ -20,7 +20,7 @@ jobs:
         dotnet-version: 8.0.x
     
     - name: Build
-      run: dotnet build src/vgaudio --configuration Release
+      run: dotnet build src/vgaudio/vgaudio.csproj --configuration Release
       
     - name: Upload artifact
       uses: actions/upload-artifact@v4.3.1
