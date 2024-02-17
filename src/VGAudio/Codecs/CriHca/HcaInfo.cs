@@ -54,7 +54,5 @@ namespace VGAudio.Codecs.CriHca
             HfrBandCount = TotalBandCount - BaseBandCount - StereoBandCount;
             HfrGroupCount = HfrBandCount.DivideByRoundUp(BandsPerHfrGroup);
         }
-
-        public HcaInfo GetClone() => (HcaInfo)MemberwiseClone();
     }
 }
